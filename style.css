@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 20px;
+    background-color: #F6F6F6;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 18vh;
+    grid-template-columns: 78vw 18vw;
+    grid-template-areas: "header contact";
+    font-size: 2.2vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+img {
+    max-height: 600px;
+    max-width: 800px;
+    display: none;
+    position: fixed;
+    object-fit: contain;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    grid-area: header;
+}
+
+.contact {
+    grid-area: contact;
+    text-align: right;
+}
+
+.song-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 8vw 18vw 20vw 32vw 18vw;
+    grid-template-areas: 
+    "year artist song album credit";
+    font-size: 2.0vw;
+}
+
+
+.year {
+    grid-area: year;
+    /* background-color: cornflowerblue; */
+}
+
+.artist {
+    grid-area: artist;
+    /* background-color: aliceblue; */
+}
+
+.artist:hover {
+    text-decoration: underline;
+}
+
+.song {
+    grid-area: song;
+    /* background-color: lightcoral; */
+}
+
+.album {
+    grid-area: album;
+    /* background-color: lightsteelblue; */
+}
+
+.credit {
+    grid-area: credit;
+    /* background-color: slategray; */
+    text-align: right;
+    font-size: 1.2vw
+}
+
+
+/* 
+footer {
+    grid-template-rows: 5vh;
+    grid-template-columns: 48vw 48vw;
+    grid-template-areas: 
+    "footer1 footer2";
+    font-size: 1vw;
+    position: absolute;
+}
+
+.footer1 {
+    grid-area: footer1;
+} */
+
+
+/* responsive */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1030px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    header {
+        display: block;
+        padding-bottom: 8vh;
+    }
+
+    .contact {
+        text-align: left;
+    }
+
+    .song-container {
+        display: block;
+    }
+}
