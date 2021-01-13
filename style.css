@@ -9,15 +9,16 @@ body {
     color: blue;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 2.5;
 }
 
 header {
     display: grid;
     grid-template-rows: 18vh;
-    grid-template-columns: 78vw 18vw;
+    grid-template-columns: 78vw 19vw;
     grid-template-areas: "header contact";
-    font-size: 2.2vw;
+    font-size: 1.3vw;
+    line-height: 1.5;
 }
 
 a {
@@ -29,7 +30,7 @@ a:hover {
 }
 
 a:visited {
-    color: purple;
+    color: blue;
 }
 
 .img-container {
@@ -59,10 +60,11 @@ img {
 .song-container {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 8vw 18vw 20vw 32vw 18vw;
+    /* grid-template-columns: 8vw 18vw 20vw 32vw 18vw; */
+    grid-template-columns: 8vw 15vw 17vw 28vw 1fr;
     grid-template-areas: 
     "year artist song album credit";
-    font-size: 2.0vw;
+    font-size: 1.3vw;
 }
 
 
@@ -93,8 +95,7 @@ img {
 .credit {
     grid-area: credit;
     /* background-color: slategray; */
-    text-align: right;
-    font-size: 1.2vw
+    font-size: 1.3vw;
 }
 
 
