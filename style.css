@@ -4,9 +4,9 @@
 }
 
 body {
-    margin: 20px;
-    background-color: #F6F6F6;
-    color: blue;
+    padding: 20px;
+    background-color: #ebffeb;
+    color: #0cc515;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     line-height: 2.5;
@@ -14,24 +14,36 @@ body {
 
 header {
     display: grid;
-    grid-template-rows: 18vh;
+    background-color: inherit;
+    z-index: 2;
+    grid-template-rows: 14vh;
     grid-template-columns: 78vw 19vw;
     grid-template-areas: "header contact";
     font-size: 1.3vw;
     line-height: 1.5;
 }
 
+footer {
+    height: 35px;
+    width: 97vw;
+    margin-top: 78.5vh;
+    font-size: 1.3vw;
+    background-color: inherit;
+    text-align: right;
+    position: absolute;
+}
+
+
+
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-a:visited {
-    color: blue;
-}
 
 .img-container {
     display: flex;
@@ -40,7 +52,7 @@ a:visited {
 }
 
 img {
-    max-height: 600px;
+    max-height: 500px;
     max-width: 800px;
     display: none;
     position: fixed;
@@ -60,8 +72,7 @@ img {
 .song-container {
     display: grid;
     grid-template-rows: auto;
-    /* grid-template-columns: 8vw 18vw 20vw 32vw 18vw; */
-    grid-template-columns: 8vw 15vw 17vw 28vw 1fr;
+    grid-template-columns: 7vw 16vw 16vw 29vw 1fr;
     grid-template-areas: 
     "year artist song album credit";
     font-size: 1.3vw;
@@ -70,12 +81,10 @@ img {
 
 .year {
     grid-area: year;
-    /* background-color: cornflowerblue; */
 }
 
 .artist {
     grid-area: artist;
-    /* background-color: aliceblue; */
 }
 
 .artist:hover {
@@ -84,34 +93,22 @@ img {
 
 .song {
     grid-area: song;
-    /* background-color: lightcoral; */
 }
 
 .album {
     grid-area: album;
-    /* background-color: lightsteelblue; */
 }
 
 .credit {
     grid-area: credit;
-    /* background-color: slategray; */
     font-size: 1.3vw;
+
+    /* background-color: slategray; */
 }
 
-
-/* 
-footer {
-    grid-template-rows: 5vh;
-    grid-template-columns: 48vw 48vw;
-    grid-template-areas: 
-    "footer1 footer2";
-    font-size: 1vw;
-    position: absolute;
+.bottom {
+    border-bottom: solid 2px #0cc515;
 }
-
-.footer1 {
-    grid-area: footer1;
-} */
 
 
 /* responsive */

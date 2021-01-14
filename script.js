@@ -1,9 +1,9 @@
 function show(x) {
-    x = document.getElementById("hidden");
-    x.style.display = "block";
+    var y = document.getElementById(x);
+    y.style.display = "block";
   };
   
-  function hide() {
-    x = document.getElementById("hidden");
-    x.style.display = "none";
+  function hide(x) {
+    var y = document.getElementById(x);
+    y.style.display = "none";
   };
