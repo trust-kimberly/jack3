@@ -85,7 +85,7 @@ img {
 .song-container {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 7vw 16vw 16vw 29vw 1fr;
+    grid-template-columns: 6vw 14vw 20vw 28vw 1fr;
     grid-template-areas: 
     "year artist song album credit";
     font-size: 1.3vw;
@@ -112,8 +112,6 @@ img {
 .credit {
     grid-area: credit;
     font-size: 1.3vw;
-
-    /* background-color: slategray; */
 }
 
 .bottom {
