@@ -4,9 +4,8 @@
 }
 
 body {
-    padding: 20px;
-    background-color: #ebffeb;
-    color: #0cc515;
+    background-color: #F8FEFA;
+    color: #004200;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     line-height: 2.5;
@@ -16,21 +15,25 @@ header {
     display: grid;
     background-color: inherit;
     z-index: 2;
-    grid-template-rows: 14vh;
+    padding: 20px;
+    margin-bottom: 4vh;
+    grid-template-rows: 8vh;
     grid-template-columns: 78vw 19vw;
     grid-template-areas: "header contact";
     font-size: 1.3vw;
     line-height: 1.5;
+    position: fixed;
 }
 
 footer {
-    height: 35px;
+    height: 6vh;
     width: 97vw;
-    margin-top: 78.5vh;
+    margin-top: 94vh;
+    padding: 0 20px 20px;
     font-size: 1.3vw;
     background-color: inherit;
     text-align: right;
-    position: absolute;
+    position: fixed;
 }
 
 
@@ -54,6 +57,8 @@ a:hover {
 img {
     max-height: 500px;
     max-width: 800px;
+    margin-top: 16vh;
+    z-index: 3;
     display: none;
     position: fixed;
     object-fit: contain;
@@ -69,6 +74,10 @@ img {
     text-align: right;
 }
 
+.margin-top {
+    margin-top: 16vh;
+}
+
 .song-container {
     display: grid;
     grid-template-rows: auto;
@@ -76,6 +85,7 @@ img {
     grid-template-areas: 
     "year artist song album credit";
     font-size: 1.3vw;
+    padding: 0 20px;
 }
 
 
@@ -85,10 +95,6 @@ img {
 
 .artist {
     grid-area: artist;
-}
-
-.artist:hover {
-    text-decoration: underline;
 }
 
 .song {
@@ -107,7 +113,7 @@ img {
 }
 
 .bottom {
-    border-bottom: solid 2px #0cc515;
+    border-bottom: solid 1.3px #004200;
 }
 
 
