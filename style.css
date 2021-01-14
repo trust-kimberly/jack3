@@ -78,6 +78,10 @@ img {
     margin-top: 16vh;
 }
 
+.margin-bottom {
+    margin-bottom: 6vh;
+}
+
 .song-container {
     display: grid;
     grid-template-rows: auto;
@@ -115,7 +119,6 @@ img {
 .bottom {
     border-bottom: solid 1.3px #004200;
 }
-
 
 /* responsive */
 
