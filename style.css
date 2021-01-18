@@ -9,6 +9,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     line-height: 2.5;
+    font-size: 1.3vw;
 }
 
 header {
@@ -20,7 +21,6 @@ header {
     grid-template-rows: 8vh;
     grid-template-columns: 78vw 19vw;
     grid-template-areas: "header contact";
-    font-size: 1.3vw;
     line-height: 1.5;
     position: fixed;
 }
@@ -30,7 +30,6 @@ footer {
     width: 97vw;
     margin-top: 94vh;
     padding: 0 20px 20px;
-    font-size: 1.3vw;
     background-color: inherit;
     text-align: right;
     position: fixed;
@@ -88,7 +87,6 @@ img {
     grid-template-columns: 6vw 14vw 20vw 28vw 1fr;
     grid-template-areas: 
     "year artist song album credit";
-    font-size: 1.3vw;
     padding: 0 20px;
 }
 
@@ -101,6 +99,10 @@ img {
     grid-area: artist;
 }
 
+.artist-mobile {
+    display: none;
+}
+
 .song {
     grid-area: song;
 }
@@ -111,7 +113,6 @@ img {
 
 .credit {
     grid-area: credit;
-    font-size: 1.3vw;
 }
 
 .bottom {
@@ -125,16 +126,49 @@ img {
   and (max-device-width: 1030px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    body {
+        font-size: 16px;
+    }   
+
     header {
-        display: block;
-        padding-bottom: 8vh;
+        padding: 4vw;
+        grid-template-rows: auto;
+        grid-template-columns: 45vw 45vw;
+    }
+
+    footer {
+        height: 6vh;
+        width: 92vw;
+        margin-top: 94vh;
+        padding: 0 4vw 4vw;
+        background-color: inherit;
+        text-align: left;
+        position: fixed;
     }
 
     .contact {
-        text-align: left;
+        text-align: right;
     }
 
     .song-container {
         display: block;
+        padding: 0 4vw;
+        line-height: 1.5;
+    }
+
+    .artist-mobile {
+        display: block;
+    }
+    
+    .bottom {
+        border-bottom: none;
+    }
+
+    .margin-bottom {
+        margin-bottom: 12vh;
+    }
+
+    .mobile-bottom {
+        margin-bottom: 30px;
     }
 }
