@@ -123,7 +123,7 @@ img {
 
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 1030px)
+  and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
     body {
@@ -131,9 +131,10 @@ img {
     }   
 
     header {
+        top: 0;
         padding: 4vw;
         grid-template-rows: auto;
-        grid-template-columns: 45vw 45vw;
+        grid-template-columns: 46vw 46vw;
     }
 
     footer {
